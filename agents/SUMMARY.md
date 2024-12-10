@@ -38,31 +38,24 @@
 
 ### Summary
 
-This white paper provides a framework for responsibly integrating agentic AI systems (AI systems that can pursue complex goals with limited direct supervision) into society. Key aspects:
+Идея: Создание базовых принципов и практик для безопасного внедрения агентных AI-систем в общество. Агентные системы - это AI-системы, способные преследовать сложные цели с ограниченным прямым контролем.
 
-- **Definition & Scope**:
-  - Defines agentic AI systems and their lifecycle
-  - Identifies key stakeholders and their responsibilities
-  - Focuses on baseline safety practices and governance
+- **Как это работает**:
+  - Определяются все участники жизненного цикла агентной системы
+  - Для каждого участника формулируются базовые обязанности
+  - Устанавливаются практики безопасности и контроля
+  - Внедряются механизмы мониторинга и отчетности
 
-- **Key Safety Practices**:
-  1. Task Suitability Evaluation
-  2. Action-Space Constraints and Approval Requirements
-  3. Default Behavior Settings
-  4. Activity Legibility
-  5. Automatic Monitoring
-  6. Attributability
-  7. Interruptibility and Control Maintenance
+- **Ключевые находки**:
+  - Выделено 7 ключевых практик безопасности: оценка пригодности задачи, ограничение пространства действий, настройки поведения по умолчанию, прозрачность действий, автоматический мониторинг, атрибуция, возможность прерывания
+  - Определены основные роли и ответственности в экосистеме агентных систем
+  - Разработаны рекомендации по оценке и тестированию агентов
 
-- **Agent Evaluation**:
-  - Highlights unique challenges in evaluating agentic systems
-  - Recommends breaking down evaluation into subtasks (e.g., information gathering, calculations, reasoning)
-  - Suggests prioritizing evaluation of high-risk actions
-  - Notes that rare failures can compound in long action sequences
-
-### Significance
-
-The paper establishes foundational guidelines for governing agentic AI systems, emphasizing the importance of safety, accountability, and responsible deployment. It acknowledges both the potential benefits and risks of these systems while providing practical recommendations for their governance.
+- **Практические выводы**:
+  - Необходимо тщательно оценивать задачи перед передачей их агентным системам
+  - Важно обеспечить многоуровневый контроль за действиями агентов
+  - Следует уделять особое внимание редким ошибкам, которые могут накапливаться
+  - Требуется баланс между автономностью агентов и безопасностью их работы
 
 ## Magentic-One: A Generalist Multi-Agent System for Solving Complex Tasks
 
@@ -72,24 +65,24 @@ The paper establishes foundational guidelines for governing agentic AI systems, 
 
 ### Summary
 
-Magentic-One is an open-source multi-agent system designed to solve complex tasks through effective planning, multi-step reasoning, and error recovery. Key aspects:
+Идея: Создание универсальной мультиагентной системы, способной решать сложные задачи за счет эффективного планирования, многошагового рассуждения и восстановления после ошибок.
 
-- **Architecture**: Uses a lead agent called the "Orchestrator" that:
-  - Plans and tracks progress
-  - Re-plans when errors occur
-  - Coordinates specialized agents for specific tasks (web browsing, file handling, coding)
+- **Как это работает**:
+  - Главный агент "Orchestrator" управляет процессом:
+    - Создает и отслеживает план выполнения
+    - Перепланирует при возникновении ошибок
+    - Координирует специализированных агентов
+  - Специализированные агенты выполняют конкретные задачи (веб-браузинг, работа с файлами, программирование)
+  - При ошибках система автоматически адаптирует стратегию
 
-- **Key Features**:
-  - Modular design allowing easy addition/removal of agents
-  - No need for prompt tuning or training when modifying the agent team
-  - Competitive performance with state-of-the-art on multiple benchmarks (GAIA, AssistantBench, WebArena)
-  - Demonstrates progress toward generalist agentic systems
+- **Ключевые находки**:
+  - Модульная архитектура позволяет легко добавлять и удалять агентов
+  - Не требуется дополнительная настройка промптов при изменении команды агентов
+  - Система показывает результаты на уровне state-of-the-art на нескольких бенчмарках
+  - Подтверждена эффективность мультиагентного подхода для универсальных систем
 
-- **Tools**:
-  - Includes AutoGenBench for rigorous agent evaluation
-  - Provides controls for repetition and isolation in benchmarking
-  - Open-source implementation available at https://aka.ms/magentic-one
-
-### Significance
-
-The paper demonstrates that a well-designed multi-agent system can achieve high performance across diverse tasks without requiring task-specific modifications to core capabilities or collaboration mechanisms. This suggests a promising direction for developing more general-purpose AI systems.
+- **Практические выводы**:
+  - Мультиагентный подход эффективнее одиночных агентов для сложных задач
+  - Важно обеспечить правильную координацию между агентами
+  - Модульность и гибкость архитектуры упрощают развитие системы
+  - Открытый исходный код позволяет использовать наработки в других проектах
