@@ -36,6 +36,8 @@
 
 **Link**: [Paper](papers/practices-for-governing-agentic-ai-systems.pdf)
 
+**Paper origin date**: 2023-12-07
+
 ### Summary
 
 Идея: Создание базовых принципов и практик для безопасного внедрения агентных AI-систем в общество. Агентные системы - это AI-системы, способные преследовать сложные цели с ограниченным прямым контролем.
@@ -62,6 +64,8 @@
 **Authors**: Adam Fourney, Gagan Bansal, Hussein Mozannar, Cheng Tan, et al.
 
 **Link**: [Paper](papers/magentic-one-a-generalist-multi-agent-system-for-solving-complex-tasks.html)
+
+**Paper origin date**: 2024-11-07
 
 ### Summary
 
