@@ -113,20 +113,6 @@
   - Модульность и гибкость архитектуры упрощают развитие системы
   - Открытый исходный код позволяет использовать наработки в других проектах
 
-## Timeline
-
-- **2016**: The first multi-agent framework was likely OpenAI's Gym, which allowed for the development and testing of reinforcement learning algorithms in a multi-agent environment.
-
-- **August 18, 2023**: Microsoft released AutoGen, an open-source framework designed for building AI agent systems. It facilitates the creation of scalable and resilient applications where AI agents can collaborate and perform tasks autonomously or with human oversight.
-
-- **August 7, 2024**: The paper "Scaling LLM Test Time Compute: Optimally Can Be More Effective Than Scaling Model Parameters" was published, contributing to the discourse on optimizing large language models (LLMs) in multi-agent settings.
-
-- **September 12, 2024**: OpenAI released O1-preview and O1-mini, a new series of AI models designed to spend more time thinking before responding. These models were specifically engineered for improved reasoning capabilities.
-
-- **October 2, 2024**: A preview of AutoGen 0.4 was released, marking a significant update to the original AutoGen framework. This version focuses on enhancing the architecture and usability for developers working with agentic AI systems.
-
-- **November 22, 2024**: The launch of CrewAI, a cutting-edge framework for managing AI agents, was announced. CrewAI enables the development of intelligent assistants and multi-agent teams, emphasizing collaborative intelligence.
-
 ## Reflexion: Language Agents with Verbal Reinforcement Learning
 
 **Authors**: Noah Shinn, Federico Cassano, Edward Berman, Ashwin Gopinath, Karthik Narasimhan, Shunyu Yao
