@@ -12,6 +12,8 @@
 
 - **7 августа 2024**: Опубликована статья ["Scaling LLM Test Time Compute: Optimally Can Be More Effective Than Scaling Model Parameters"](#scaling-llm-test-time-compute-optimally-can-be-more-effective-than-scaling-model-parameters), развивающая дискуссию об оптимизации LLM в мультиагентных системах.
 
+- **10 марта 2024**: Первый коммит OpenHands - открытой платформы для разработки программного обеспечения с помощью AI-агентов. Платформа позволяет агентам выполнять любые действия, доступные человеку-разработчику.
+
 - **12 сентября 2024**: OpenAI выпустила O1-preview и O1-mini - новую серию AI-моделей, разработанных для более глубокого анализа перед ответом. Эти модели специально созданы для улучшенных возможностей рассуждения.
 
 - **2 октября 2024**: Выпущен предварительный релиз AutoGen 0.4, значительное обновление оригинального фреймворка AutoGen. Версия фокусируется на улучшении архитектуры и удобства использования для разработчиков агентных AI-систем.
@@ -19,6 +21,50 @@
 - **7 ноября 2024**: Опубликована статья ["Magentic-One: A Generalist Multi-Agent System for Solving Complex Tasks"](#magentic-one-a-generalist-multi-agent-system-for-solving-complex-tasks), представляющая новый подход к мультиагентным системам с улучшенным планированием и восстановлением после ошибок.
 
 - **22 ноября 2024**: Анонсирован запуск CrewAI - передового фреймворка для управления AI-агентами. CrewAI позволяет разрабатывать интеллектуальных ассистентов и мультиагентные команды, делая акцент на коллективном интеллекте.
+
+## OpenHands
+
+OpenHands - это открытая платформа для разработки программного обеспечения с помощью AI-агентов. Платформа построена на основе нескольких ключевых open-source проектов и предоставляет агентам возможности, аналогичные человеку-разработчику.
+
+### Архитектура и компоненты
+
+<details>
+<summary>Общая архитектура системы</summary>
+
+![OpenHands Architecture](images/openhands-architecture.png)
+</details>
+
+<details>
+<summary>Сессии и взаимодействие с браузером</summary>
+
+![OpenHands Session](images/openhands-session.png)
+![OpenHands Browser](images/openhands-browser.png)
+</details>
+
+<details>
+<summary>Процесс обновления</summary>
+
+![OpenHands Update](images/openhands-update.png)
+</details>
+
+### Основные компоненты
+
+- **SWE Agent**: Адаптированный агент для программной инженерии из проекта princeton-nlp/swe-agent
+- **Aider**: Интегрированный модуль для парного программирования с AI из проекта paul-gauthier/aider
+- **BrowserGym**: Адаптированная система для работы с веб-браузером из проекта ServiceNow/BrowserGym
+
+### Поддержка бенчмарков
+
+OpenHands включает интеграцию с основными бенчмарками для оценки агентов:
+- HumanEval (MIT License)
+- DSP (MIT License)
+- HumanEvalPack (Apache License 2.0)
+- AgentBench (Apache License 2.0)
+- SWE-Bench (MIT License)
+- BIRD (MIT License)
+- Gorilla APIBench (Apache License 2.0)
+- GPQA (MIT License)
+- ProntoQA (Apache License 2.0)
 
 ## Статьи
 
