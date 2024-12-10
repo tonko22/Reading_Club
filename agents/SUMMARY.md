@@ -1,26 +1,26 @@
-# Paper Notes
+# Заметки по статьям
 
-## Timeline
+## Хронология развития
 
-- **2016**: The first multi-agent framework was likely OpenAI's Gym, which allowed for the development and testing of reinforcement learning algorithms in a multi-agent environment.
+- **2016**: Выпущен первый мультиагентный фреймворк OpenAI Gym, который позволил разрабатывать и тестировать алгоритмы reinforcement learning в мультиагентной среде.
 
-- **March 20, 2023**: The paper ["Reflexion: Language Agents with Verbal Reinforcement Learning"](#reflexion-language-agents-with-verbal-reinforcement-learning) was published, introducing a novel framework for training language agents through linguistic feedback.
+- **20 марта 2023**: Опубликована статья ["Reflexion: Language Agents with Verbal Reinforcement Learning"](#reflexion-language-agents-with-verbal-reinforcement-learning), представляющая новый фреймворк для обучения языковых агентов через лингвистическую обратную связь.
 
-- **August 18, 2023**: Microsoft released AutoGen, an open-source framework designed for building AI agent systems. It facilitates the creation of scalable and resilient applications where AI agents can collaborate and perform tasks autonomously or with human oversight.
+- **18 августа 2023**: Microsoft выпустила AutoGen - open-source фреймворк для создания AI-агентных систем. Он обеспечивает создание масштабируемых и устойчивых приложений, где AI-агенты могут взаимодействовать и выполнять задачи автономно или под контролем человека.
 
-- **December 7, 2023**: The paper ["Practices for Governing Agentic AI Systems"](#practices-for-governing-agentic-ai-systems) was published, establishing foundational guidelines for the safe and responsible deployment of AI agents.
+- **7 декабря 2023**: Опубликована статья ["Practices for Governing Agentic AI Systems"](#practices-for-governing-agentic-ai-systems), устанавливающая базовые принципы для безопасного внедрения AI-агентов.
 
-- **August 7, 2024**: The paper ["Scaling LLM Test Time Compute: Optimally Can Be More Effective Than Scaling Model Parameters"](#scaling-llm-test-time-compute-optimally-can-be-more-effective-than-scaling-model-parameters) was published, contributing to the discourse on optimizing large language models (LLMs) in multi-agent settings.
+- **7 августа 2024**: Опубликована статья ["Scaling LLM Test Time Compute: Optimally Can Be More Effective Than Scaling Model Parameters"](#scaling-llm-test-time-compute-optimally-can-be-more-effective-than-scaling-model-parameters), развивающая дискуссию об оптимизации LLM в мультиагентных системах.
 
-- **September 12, 2024**: OpenAI released O1-preview and O1-mini, a new series of AI models designed to spend more time thinking before responding. These models were specifically engineered for improved reasoning capabilities.
+- **12 сентября 2024**: OpenAI выпустила O1-preview и O1-mini - новую серию AI-моделей, разработанных для более глубокого анализа перед ответом. Эти модели специально созданы для улучшенных возможностей рассуждения.
 
-- **October 2, 2024**: A preview of AutoGen 0.4 was released, marking a significant update to the original AutoGen framework. This version focuses on enhancing the architecture and usability for developers working with agentic AI systems.
+- **2 октября 2024**: Выпущен предварительный релиз AutoGen 0.4, значительное обновление оригинального фреймворка AutoGen. Версия фокусируется на улучшении архитектуры и удобства использования для разработчиков агентных AI-систем.
 
-- **November 7, 2024**: The paper ["Magentic-One: A Generalist Multi-Agent System for Solving Complex Tasks"](#magentic-one-a-generalist-multi-agent-system-for-solving-complex-tasks) was published, presenting a new approach to multi-agent systems with improved planning and error recovery capabilities.
+- **7 ноября 2024**: Опубликована статья ["Magentic-One: A Generalist Multi-Agent System for Solving Complex Tasks"](#magentic-one-a-generalist-multi-agent-system-for-solving-complex-tasks), представляющая новый подход к мультиагентным системам с улучшенным планированием и восстановлением после ошибок.
 
-- **November 22, 2024**: The launch of CrewAI, a cutting-edge framework for managing AI agents, was announced. CrewAI enables the development of intelligent assistants and multi-agent teams, emphasizing collaborative intelligence.
+- **22 ноября 2024**: Анонсирован запуск CrewAI - передового фреймворка для управления AI-агентами. CrewAI позволяет разрабатывать интеллектуальных ассистентов и мультиагентные команды, делая акцент на коллективном интеллекте.
 
-## Papers
+## Статьи
 
 ### Scaling LLM Test-Time Compute Optimally Can Be More Effective Than Scaling Model Parameters
 
