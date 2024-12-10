@@ -104,3 +104,34 @@
 - **October 2, 2024**: A preview of AutoGen 0.4 was released, marking a significant update to the original AutoGen framework. This version focuses on enhancing the architecture and usability for developers working with agentic AI systems.
 
 - **November 22, 2024**: The launch of CrewAI, a cutting-edge framework for managing AI agents, was announced. CrewAI enables the development of intelligent assistants and multi-agent teams, emphasizing collaborative intelligence.
+
+## Reflexion: Language Agents with Verbal Reinforcement Learning
+
+**Authors**: Noah Shinn, Federico Cassano, Edward Berman, Ashwin Gopinath, Karthik Narasimhan, Shunyu Yao
+
+**Link**: [Paper](papers/reflexion-language-agents-with-verbal-reinforcement-learning.pdf)
+
+**Paper origin date**: 2023-03-20
+
+### Summary
+
+Идея: Создание фреймворка для обучения языковых агентов через вербальную обратную связь без необходимости обновления весов модели. Агенты учатся на своих ошибках, анализируя результаты и сохраняя рефлексию в памяти.
+
+- **Как это работает**:
+  - Агент выполняет задачу и получает обратную связь (числовую или текстовую)
+  - Проводит вербальную рефлексию над полученной обратной связью
+  - Сохраняет результаты рефлексии в буфере эпизодической памяти
+  - Использует накопленный опыт для улучшения решений в последующих попытках
+  - Может работать как с внешней, так и с внутренней (симулированной) обратной связью
+
+- **Ключевые находки**:
+  - Метод значительно улучшает результаты базового агента на различных задачах
+  - Достигнута точность 91% на бенчмарке HumanEval (программирование), превосходя GPT-4 (80%)
+  - Подход гибок и может использовать разные типы обратной связи
+  - Не требует дорогостоящей переподготовки модели
+
+- **Практические выводы**:
+  - Вербальная рефлексия - эффективный способ обучения языковых моделей
+  - Важно правильно структурировать и хранить опыт предыдущих попыток
+  - Метод особенно эффективен для задач программирования и последовательного принятия решений
+  - Подход можно комбинировать с другими методами обучения агентов
