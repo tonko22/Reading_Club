@@ -22,7 +22,7 @@
 ## Статьи
 
 
-##№ Reflexion: Language Agents with Verbal Reinforcement Learning
+## Reflexion: Language Agents with Verbal Reinforcement Learning
 
 **Authors**: Noah Shinn, Federico Cassano, Edward Berman, Ashwin Gopinath, Karthik Narasimhan, Shunyu Yao
 
