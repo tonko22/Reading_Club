@@ -87,6 +87,76 @@
 - **15 октября 2024**: Выпущен **Swarm** - фреймворк, акцентирующий внимание на легкой координации между агентами, используя рутины и передачу управления для облегчения совместной работы в сложных рабочих процессах.
 
 - **Октябрь 2024**: Представлен **CrewAI** - фреймворк, позволяющий создавать AI-команды, где каждый агент имеет определенные роли, инструменты и цели, работая вместе для выполнения сложных задач.
+
+  <details>
+  <summary>Пример сериализации агентов</summary>
+
+  ```yaml
+  developer:
+  role: >
+    Senior Python Developer
+  goal: >
+    Read and understand the task: {task},
+    Analyze task requirements, implement a clean, efficient Python solution,
+    and ensure it is properly saved to code.py using the FileWriterTool.
+  backstory: >
+    You're a senior Python developer who excels at writing clean, maintainable code
+    and ensuring proper file management. You understand the importance of saving work
+    correctly and always use the FileWriterTool to save your implementations.
+  llm: anthropic/claude-3-5-sonnet-20240620
+
+  tester:
+    role: >
+      Code Testing Specialist
+    goal: >
+      Execute code.py in a sandbox environment using CodeInterpreterTool with the file path,
+      capture execution outputs, and create a clear summary in report.md.
+    backstory: >
+      You're a code testing specialist who focuses on safe code execution
+      and clear reporting. You execute Python files in controlled environments using
+      the CodeInterpreterTool and produce concise, informative execution reports.
+    llm: anthropic/claude-3-5-sonnet-20240620
+    ```
+  </details
+  >
+  <details>
+  <summary>Пример сериализации шаблона задачи</summary>
+
+  ```yaml
+  implementation_task:
+  description: >
+    Implement a Python solution for the given task:
+    {task}
+    and save it to code.py.
+    
+    Requirements:
+    - Follow Python best practices and PEP8
+    - Include proper input validation
+    - Add docstrings and comments
+    - Use FileWriterTool to save the implementation to code.py
+    - Ensure the file is properly saved before completion
+  expected_output: >
+    A well-documented Python implementation properly saved to code.py using FileWriterTool
+  agent: developer
+
+  reporting_task:
+    description: >
+      Execute code.py in a sandbox environment and create an execution report:
+      
+      Steps:
+      1. Execute code.py using CodeInterpreterTool with the file path
+      2. Capture all execution outputs
+      3. Create a clear summary of the execution results
+      4. Save both outputs and summary to report.md
+
+      Note: The CodeInterpreterTool now accepts a file path instead of code string.
+      Make sure to provide the full path to code.py when executing.
+    expected_output: >
+      A report.md file containing execution outputs and a clear summary
+    agent: tester
+  ```
+  </details>
+
   <details>
   <summary>Пример работы CrewAI Docs Agent</summary>
 
