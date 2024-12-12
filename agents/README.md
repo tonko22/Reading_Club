@@ -4,39 +4,49 @@
 - [Хронология развития мультиагентного подхода](#хронология-развития-мультиагентного-подхода)
 - [Глоссарий](#глоссарий)
 
-# Коротко в историю
+<details close>
+<summary>Коротко в историю</summary>
 
-<details open>
-<summary>Как развивался GenAI</summary>
+  <details open>
+  <summary>Как развивался GenAI</summary>
 
-![Timeline of GenAI development](/agents/images/genai-timeline.png)
+  ![Timeline of GenAI development](/agents/images/genai-timeline.png)
+
+  </details>
+
+  <details open>
+  <summary>Цикл зрелости технологий Gartner для AI/ML</summary>
+
+  ![Gartner's Hype Cycle 2024](/agents/images/gartners-hype-cycle-2024.png)
+
+  </details>
+
+  <details open>
+  <summary>Радар влияния технологий Gartner</summary>
+
+  ![Gartner's Impact Radar](/agents/images/gartners-impact-radar.png)
+
+  </details>
+
+  <details open>
+  <summary>Весна в AI</summary>
+
+  ![AI Autumn](/agents/images/ai-autumn.png)
+  Кусочек таймлайна картинкой из [презентации СПбГУ](https://logic.pdmi.ras.ru/~sergey/teaching/mlspsu2023.html). 
+  Мультиагентный подход в R'n'D, но не как основное направление.
+  Параллельно развивается reasoning-подходы, не обязательно реализованные с помощью агентных-фреймворков.
+  </details>
 
 </details>
 
-<details open>
-<summary>Цикл зрелости технологий Gartner для AI/ML</summary>
+# Основная идея мультиагентного фреймворка
+Коротко: Среда для описания задачи и ее решения на абстрактом уровнеде за счет динамического распределения ресурсов для ее декомпозиции и решения
 
-![Gartner's Hype Cycle 2024](/agents/images/gartners-hype-cycle-2024.png)
-
-</details>
-
-<details open>
-<summary>Радар влияния технологий Gartner</summary>
-
-![Gartner's Impact Radar](/agents/images/gartners-impact-radar.png)
-
-</details>
-
-<details open>
-<summary>Весна в AI</summary>
-
-![AI Autumn](/agents/images/ai-autumn.png)
-Кусочек таймлайна картинкой из [презентации СПбГУ](https://logic.pdmi.ras.ru/~sergey/teaching/mlspsu2023.html). 
-Мультиагентный подход в R'n'D, но не как основное направление.
-Параллельно развивается reasoning-подходы, не обязательно реализованные с помощью агентных-фреймворков.
-</details>
-
-# Основная идея мультиагентного подхода
+Выделяем сушности:
+* Описание задачи - описание задачи на естественном языке, может быть абстрактного уровня (prompt-templating)
+* LLM-агент - "решатель" задачи, позволяющий "запрограммировать" свое поведение на естественном языке, в том числе на абстрактном уровне
+* Инструмент (tool) - "интерфейс" взаимодействия агент->система(среда), позволяющий агенту вызывать готовый код, например запрос по API. Агент может изъявить желание вызвать инструмент и сгенерировать параметры вызова для него, содержащие контекстные данные.
+* Стратегия взаимодействия агентов - обычно реализованны как готовые классы в самом фреймворке, но также может быть представлена в виде задачи и делегирована агентам
 
 # Хронология развития мультиагентного подхода
 
