@@ -435,3 +435,13 @@ Windsurf представляет собой инновационную инте
 - **Reasoning** - Рассуждение, способность системы логически обрабатывать информацию и делать выводы.
 
 - **Verbal Reinforcement** - Вербальное подкрепление, метод обучения агентов через текстовую обратную связь.
+
+# TODO: Analyze
+
+https://deepgram.com/learn/top-arxiv-papers-about-ai-agents
+https://github.com/LantaoYu/MARL-Papers
+https://www.ibm.com/architectures/hybrid/genai-mrkl
+
+**Introduction to Machine Learning**
+===================================================
+Lecture Notes for COS 324 at Princeton University
