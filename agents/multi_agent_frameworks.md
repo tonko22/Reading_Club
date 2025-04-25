@@ -42,7 +42,7 @@
 # Основная идея мультиагентного фреймворка
 Коротко: Среда для описания задачи и ее решения на абстрактом уровнеде за счет динамического распределения ресурсов для ее декомпозиции и решения
 
-Выделяем сушности:
+Выделяем сущности:
 * Описание задачи - описание задачи на естественном языке, может быть абстрактного уровня (prompt-templating)
 * LLM-агент - "решатель" задачи, позволяющий "запрограммировать" свое поведение на естественном языке, в том числе на абстрактном уровне
 * Инструмент (tool) - "интерфейс" взаимодействия агент->система(среда), позволяющий агенту вызывать готовый код, например запрос по API. Агент может изъявить желание вызвать инструмент и сгенерировать параметры вызова для него, содержащие контекстные данные.
@@ -214,7 +214,7 @@
 
 **Authors**: Noah Shinn, Federico Cassano, Edward Berman, Ashwin Gopinath, Karthik Narasimhan, Shunyu Yao
 
-**Link**: [Paper](papers/reflexion-language-agents-with-verbal-reinforcement-learning.pdf)
+**Link**: [Paper](https://arxiv.org/abs/2303.11366))
 
 **Paper origin date**: 2023-03-20
 
@@ -254,7 +254,7 @@
 
 **Authors**: Tianle Cai, Yuhao Wang, Zhengyang Geng, Jason D. Lee
 
-**Link**: [Paper](papers/scaling-llm-test-time-compute-optimally-can-be-more-effective-than-scaling-model-parameters.pdf)
+**Link**: [Paper](https://arxiv.org/abs/2408.03314)
 
 **Paper origin date**: 2024-08-07
 
@@ -327,7 +327,7 @@
 
 **Authors**: Adam Fourney, Gagan Bansal, Hussein Mozannar, Cheng Tan, et al.
 
-**Link**: [Paper](papers/magentic-one-a-generalist-multi-agent-system-for-solving-complex-tasks.html)
+**Link**: [Paper](https://arxiv.org/abs/2411.04468)
 
 **Paper origin date**: 2024-11-07
 
